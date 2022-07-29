@@ -105,10 +105,10 @@ ibmcloud-delete.sh [-n] [-c <path-to-config-file>]
    ./ibmcloud-delete.sh -n
    ```
 
-   (C) Delete all resources but skip resources list in `myfile.txt`:
+   (C) Delete all resources but skip resources list in `ibmcloudconfig.txt`:
 
    ```bash
-   ./ibmcloud-delete.sh -c myfile.txt
+   ./ibmcloud-delete.sh -c ibmcloudconfig.txt
    ```
 
 ## TODO
