@@ -116,7 +116,6 @@ ibmcloud-delete.sh [-n] [-c <path-to-config-file>]
 1. The project needs support for deleting the following types of resources:
 
    * Storage(s) - File, Block & COS
-   * VPC(s) Gateway
   
 ## Resources
 
