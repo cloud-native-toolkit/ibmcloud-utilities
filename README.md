@@ -44,15 +44,11 @@ ibmcloud plugin install cloud-object-storage
 ibmcloud plugin install vpc-infrastructure
 ```
 
-```
-ibmcloud target -g <Resource-Group>
-```  
-
 ## CLI options
 
 | Category | Name                                                                       | Description          | Run Time |
 |--------|----------------------------------------------------------------------------|----------------------|----------|
-| Delete    | [Delete IBM Cloud resource](./ibmcloud-delete.sh) |⚠️⚠️⚠️⚠️ Delete Resource Group, Cluster, Applications, Services, VPC (Subnet/ Loadbalancer), Classic VM, Code Engine, Cloud Functions or Satellite location, APIKeys almost anything you deal with in IBM Cloud | 10-30 Mins (Depends on total number of resources)  |
+| Delete   | [Delete IBM Cloud resource(s)](./ibmcloud-delete.sh) |⚠️⚠️⚠️⚠️ Delete Resource Group, Cluster, Applications, Services, VPC (Subnet/ Loadbalancer), Classic VM, Code Engine, Cloud Functions or Satellite location, APIKeys almost anything you deal with in IBM Cloud | 10-30 Mins (Depends on total number of resources)  |
 
 Be aware that *IBM Cloud Utilies* is a very destructive tool, be very careful while using it. 
 
