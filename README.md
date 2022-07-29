@@ -4,7 +4,7 @@ Remove all resources from an IBM Cloud account such as
 
 - Kubernetes and OpenShift clusters
 - Container Registry namespaces (Only List)
-- Applications (Cloud Foundry or Stater Kits)
+- Applications 
 - Services (like Cloudant, Watson services, Object Storage etc)
 - Classic Baremetal servers
 - Classic Virtual servers
@@ -23,7 +23,7 @@ In order to use this script you must have installed the IBM Cloud CLI. If you ne
 curl -fsSL https://clis.cloud.ibm.com/install/linux | sh
 ```
 
-Once IBM Cloud CLI installed,  install several plugins for the script to execute successfully.
+***Once IBM Cloud CLI installed***,  install several plugins for the script to execute successfully.
 install them run the following commands:
 
 ```
