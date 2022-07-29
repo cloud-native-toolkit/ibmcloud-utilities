@@ -52,29 +52,13 @@ ibmcloud target -g <Resource-Group>
 
 | Category | Name                                                                       | Description          | Run Time |
 |--------|----------------------------------------------------------------------------|----------------------|----------|
-| Delete    | [Delete IBM Cloud resource](./ibmcloud-delete.sh) |⚠️⚠️⚠️⚠️ Delete resource group will remove cluster, virtual machines, applications,  services,vpc(s) or almost anything you deal with in IBM Cloud | 10-30 Mins (Depends on total number of resources)  |
+| Delete    | [Delete IBM Cloud resource](./ibmcloud-delete.sh) |⚠️⚠️⚠️⚠️ Delete Resource Group, Cluster, Applications, Services, VPC (Subnet/ Loadbalancer), Classic VM, Code Engine, Cloud Functions or Satellite location, APIKeys almost anything you deal with in IBM Cloud | 10-30 Mins (Depends on total number of resources)  |
 
 Be aware that *IBM Cloud Utilies* is a very destructive tool, be very careful while using it. 
 
 
 1. By default *IBM Cloud Utilies* only lists all resources which exist in the account/resourcegroup/region. You need to add `-n` flag to actually delete resources.
 2. A config file can be used to specify names and IDs of resources to skip over.
-
-The project itself is just a shell script that is required be run by an authenticated IBM Cloud user. The shell script will find and delete the following resources:
-
-* Kubernetes and OpenShift clusters
-* Container Registry namespaces
-* Applications (Cloud Foundry or Stater Kits)
-* Services (like Cloudant, Watson services, Object Storage (and their underlying buckets), etc)
-* Classic Baremetal servers
-* Classic Virtual servers
-* Code Engine projects (and their underlying jobs)
-* Cloud Functions Namespaces (and their underlying actions)
-* API keys (excluding ones requires for managing Kubernetes clusters)
-* Satellite locations
-* Gen2 VPCs
-* VPC Subnet
-* VPC Loadbalancer
 
 ```bash
 ibmcloud-delete.sh [-n] [-c <path-to-config-file>]
@@ -131,7 +115,6 @@ ibmcloud-delete.sh [-n] [-c <path-to-config-file>]
 
 1. The project needs support for deleting the following types of resources:
 
-   * [Schematics Workspaces](https://cloud.ibm.com/docs/schematics?topic=schematics-schematics-cli-reference#schematics-workspace-delete)
    * Storage(s) - File, Block & COS
    * VPC(s) Gateway
   
