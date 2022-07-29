@@ -77,7 +77,7 @@ The project itself is just a shell script that is required be run by an authenti
 ## CLI options
 
 ```bash
-main.sh [-n] [-c <path-to-config-file>]
+ibmcloud-delete.sh [-n] [-c <path-to-config-file>]
 ```
 
 * `-n`: Specify "no dry run". Resources will be deleted.
