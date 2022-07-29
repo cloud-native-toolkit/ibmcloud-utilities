@@ -109,19 +109,19 @@ ibmcloud-delete.sh [-n] [-c <path-to-config-file>]
 
 4. Run the CLI.
 
-   Perform a dry run:
+   (A) Perform a dry run:
 
    ```bash
    ./ibmcloud-delete.sh
    ```
 
-   Delete all resources (will skip over any resorces found in `.ibmcloud-nuke`):
+   (B) Delete all resources (will skip over any resorces found in `.ibmcloud-skip`):
 
    ```bash
    ./ibmcloud-delete.sh -n
    ```
 
-   Delete all resources but skip resources list in `myfile.txt`:
+   (C) Delete all resources but skip resources list in `myfile.txt`:
 
    ```bash
    ./ibmcloud-delete.sh -c myfile.txt
@@ -132,7 +132,9 @@ ibmcloud-delete.sh [-n] [-c <path-to-config-file>]
 1. The project needs support for deleting the following types of resources:
 
    * [Schematics Workspaces](https://cloud.ibm.com/docs/schematics?topic=schematics-schematics-cli-reference#schematics-workspace-delete)
-
+   * Storage(s) - File, Block & COS
+   * VPC(s) Gateway
+  
 ## Resources
 
 1. [IBM Cloud CLI](https://cloud.ibm.com/docs/cli?topic=cli-getting-started)

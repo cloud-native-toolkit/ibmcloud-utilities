@@ -39,7 +39,7 @@ if [ "$CONFIG_FILE" ]; then
         exit 1
     fi
 else
-    CONFIG_FILE='.ibmcloud-nuke'
+    CONFIG_FILE='.ibmcloud-skip'
     echo "Attempting to use config file at default location: $CONFIG_FILE"
 fi
 
