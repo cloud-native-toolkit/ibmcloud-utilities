@@ -1,4 +1,4 @@
-# ibmcloud-nuke
+# ibmcloud-utilies
 
 Remove all resources from an IBM Cloud account.
 
