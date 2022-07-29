@@ -46,16 +46,19 @@ ibmcloud plugin install vpc-infrastructure
 
 ```
 ibmcloud target -g <Resource-Group>
-```
+```  
 
-## Caution!
+## CLI options
 
-Be aware that *IBM Cloud Nuke* is a very destructive tool, be very careful while using it. Otherwise you might delete production data. **Do NOT run this application on an IBM Cloud account where you cannot afford to lose all resources.**
+| Category | Name                                                                       | Description          | Run Time |
+|--------|----------------------------------------------------------------------------|----------------------|----------|
+| Delete    | [Delete IBM Cloud resource](./ibmcloud-delete.sh) |⚠️⚠️⚠️⚠️ Delete resource group will remove cluster, virtual machines, applications,  services,vpc(s) or almost anything you deal with in IBM Cloud | 10-30 Mins (Depends on total number of resources)  |
 
-Some safety precautions have been put in place.
+Be aware that *IBM Cloud Utilies* is a very destructive tool, be very careful while using it. 
 
-1. By default *IBM Cloud Nuke* only lists all nukeable resources. You need to add `-n` flag to actually delete resources.
-1. A config file can be used to specify names and IDs of resources to skip over.
+
+1. By default *IBM Cloud Utilies* only lists all resources which exist in the account/resourcegroup/region. You need to add `-n` flag to actually delete resources.
+2. A config file can be used to specify names and IDs of resources to skip over.
 
 The project itself is just a shell script that is required be run by an authenticated IBM Cloud user. The shell script will find and delete the following resources:
 
@@ -72,9 +75,6 @@ The project itself is just a shell script that is required be run by an authenti
 * Gen2 VPCs
 * VPC Subnet
 * VPC Loadbalancer
-  
-
-## CLI options
 
 ```bash
 ibmcloud-delete.sh [-n] [-c <path-to-config-file>]
