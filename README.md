@@ -65,7 +65,7 @@ ibmcloud-delete.sh [-n] [-c <path-to-config-file>]
 ```
 
 * `-n`: Specify "no dry run". Resources will be deleted.
-* `-c`: Specify a config file for IDs/names of resources to be saved from deletion. The tool will automatically look for a file called `ibmcloud-nuke` in the local directory.
+* `-c`: Specify a config file for IDs/names of resources to be saved from deletion. The tool will automatically look for a file called `ibmcloud-skip` in the local directory.
 
 ## Using the CLI
 
