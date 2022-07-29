@@ -20,19 +20,19 @@ Remove all resources from an IBM Cloud account such as
 
 In order to use this script you must have installed the IBM Cloud CLI. If you need to do that run the following:
 
-- For MacOS, run the following command:
+- ***For MacOS***, run the following command:
 
 ```
 curl -fsSL https://clis.cloud.ibm.com/install/osx | sh
 ```
 
-- For Linux, run the following command:
+- ***For Linux***, run the following command:
 
 ```
 curl -fsSL https://clis.cloud.ibm.com/install/linux | sh
 ```
 
-- For Windows 10 Pro, run the following command in PowerShell as an administrator:
+- ***For Windows 10 Pro***, run the following command in PowerShell as an administrator:
 
 ```
 curl -fsSL https://clis.cloud.ibm.com/install/linux | sh
