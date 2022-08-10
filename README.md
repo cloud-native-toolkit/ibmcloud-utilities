@@ -15,6 +15,7 @@ Remove all resources from an IBM Cloud account such as
 - Gen2 VPCs
 - Gen2 VPC Subnet
 - Gen2 VPC Loadbalancer
+- Monitoring
 
 ## Install the IBM Cloud CLI & plugins
 
@@ -71,6 +72,10 @@ ibmcloud plugin install cloud-object-storage
 
 ```
 ibmcloud plugin install vpc-infrastructure
+```
+
+```
+ibmcloud plugin install monitoring
 ```
 
 ## CLI options
@@ -140,6 +145,8 @@ ibmcloud-delete.sh [-n] [-c <path-to-config-file>]
 1. The project needs support for deleting the following types of resources:
 
    * Storage(s) - File, Block & COS
+   * Sysdig Monitoring CLI not supported to list / delete
+   * Certificate Manager CLI not supported to list / delete
   
 ## Resources
 
