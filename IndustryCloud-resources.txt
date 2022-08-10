@@ -1,0 +1,51 @@
+Attempting to use config file at default location: .ibmcloud-skip
+No (-n) flag found. Will NOT delete any resources.
+NO_DRY_RUN = 0
+CONFIG_FILE = .ibmcloud-skip
+  
+Retrieving all resource groups under account: 
+- Default
+- Telco-Ref-Arch
+  
+OpenShift Clusters: 
+- telco-oms.8x32
+  
+Container Registry (namespaces): 
+- telco-ref-arch
+- 
+- OK
+  
+Applications: 
+  
+Services: 
+- schematics
+  
+Classic Baremetal: 
+  
+Classic VMs: 
+  
+Code Engine (Projects):
+  
+Cloud Functions (namespaces): 
+- 
+  
+Satellite locations: 
+  
+Virtual Private Clouds: 
+  
+Virtual Private Clouds - Subnets: 
+  
+Virtual Private Clouds - Load Balancer: 
+  
+Virtual Private Clouds - Regions: 
+-> au-syd
+-> br-sao
+-> ca-tor
+-> eu-de
+-> eu-gb
+-> jp-osa
+-> jp-tok
+-> us-east
+-> us-south
+  
+API Keys: 

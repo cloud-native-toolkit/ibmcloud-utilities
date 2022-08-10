@@ -103,10 +103,6 @@ echo "Container Registry (namespaces): "
 ibmcloud cr namespaces | tail -n+4 | while read -r name rest_of_cmd ; do
     echo "- ${name}"
     check_config_file "${name}"
-
-    if [ "${NO_DRY_RUN}" == 1 ]; then
-        ibmcloud cr namespace-rm -f ${name}
-    fi
 done
 
 # apps
@@ -257,10 +253,6 @@ echo "Virtual Private Clouds - Regions: "
 ibmcloud is regions | tail -n+3 | while read -r id rest_of_cmd; do
     echo "-> ${id}"
     check_config_file "${id}"
-
-    if [ "${NO_DRY_RUN}" == 1 ]; then
-        ibmcloud is region "${id}" -f
-    fi
 done
 
 # api keys - skip the keys that say "Do not delete"
