@@ -145,6 +145,9 @@ ibmcloud-delete.sh [-n] [-c <path-to-config-file>]
 1. The project needs support for deleting the following types of resources:
 
    * Storage(s) - File, Block & COS
+  
+## CLI Not Supported
+The following services does not have CLI support as IBM Cloud provides API Support at the moment of writing README.
    * Sysdig Monitoring CLI not supported to list / delete
    * Certificate Manager CLI not supported to list / delete
   
